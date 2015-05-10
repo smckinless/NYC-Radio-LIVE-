@@ -1,0 +1,119 @@
+div {
+	text-align: center;
+}
+title {
+	text-align: center;
+}
+
+header {
+	top: 50%;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom: 10px;
+	color: #93B101;
+	font-size: 50px;
+}
+
+.title {
+	font-size: 50px;
+	margin: 0 auto;
+	color: green;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.top {
+	padding: 20px 30px 20px 30px;
+	height: auto;
+	width: 650px;
+	margin: 0 auto;
+	background-color: white;
+}
+body {
+	background-color: #f0efeb;
+	font-family: "sans-serif";
+}
+
+section {
+	padding:0px;
+	background-color: #f0efeb;
+	font-family: "sans-serif"
+}
+
+li {
+	list-style: none;
+}
+
+hr {
+	height: 5px;
+}
+
+.date {
+	display: inline-block;
+	height: 75px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.circle-date {
+	height: 75px;
+	width: 75px;
+	border: 2px solid green;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 75px;
+}
+
+.month {
+	margin-top: 20px;
+	display: block;
+}
+
+.day {
+	display: block;
+	color: green;
+	font-size: 15px;
+}
+
+.side-bar {
+	display: block;
+	width: 250px;
+}
+.categories {
+	float: left;
+	background-color: white;
+	margin-left: 70px;
+	margin-top: 350px;
+	width: 200px;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+	padding-top: 20px;
+	display: block;
+	border: 1px solid #f0efeb;
+}
+.category-list {
+	padding-left: 0px;
+}
+.left {
+	text-align: left;
+}
+
+.background {
+	width:850px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.bottom {
+	padding: 20px 30px 20px 30px;
+	height: auto;
+	width: 650px;
+	margin: 0 auto;
+	background-color: white;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.post {
+	padding-top: 50px;
+}

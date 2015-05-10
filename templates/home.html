@@ -1,0 +1,32 @@
+<header>
+        <div class="container">
+            <video src = "/static/img/video.mp4" id="bgvid" autoplay loop style="opacity:1; -webkit-filter: contrast(50%);
+" muted >
+                            <script type="text/javascript">
+                                
+                                playlist = ['video.mp4'],
+                                video = document.getElementById('video');
+
+                                video.addEventListener('ended', rotate_video, false);
+
+                                function rotate_video() {
+                                video.setAttribute('src', playlist[index]);
+                                video.load();
+                                index++;
+                                if (index >= playlist.length) { index = 0; }
+                                    }
+                                </script>
+                    </video>
+            <div class="intro-text">
+                <div class="intro-lead-in" style="text-align: center;">NYC Radio LIVE!
+                    <hr>
+                    <h4>Live Performance and Interviews with NY's Top Musicians</h4>
+                    <hr>
+                <div class="intro-heading">
+                    <a href="#services" class="page-scroll btn btn-xl" style="">Check Us Out!</a>
+                </div>
+            </div>
+        
+        </div>
+        
+    </header>

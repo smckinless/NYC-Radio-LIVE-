@@ -1,0 +1,78 @@
+<!doctype html>
+<link rel="stylesheet" href="static/css/blog_base.css" type="text/css">
+<link rel="stylesheet" href="static/css/index.css" type="text/css">
+<link rel="stylesheet" href="static/css/bootstrap.css" type="text/css">
+
+{% block content %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-header page-scroll">
+		<a class="navbar-brand page-scroll" href="/">NYC Radio LIVE!</a>
+	</div>
+	<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="page-scroll">Blog</a></li>
+			<li><a href="page-scroll">Archives</a></li>
+			<li><a href="page-scroll">About the Host</a></li>
+			<li><a href="page-scroll">Donation Store</a></li>
+			<li><a href="page-scroll">Contact Me</a></li>
+		</ul>
+	</div>
+</nav>
+
+<body>
+	<div class="side-bar">
+		<div class="categories">
+			<h5>Categories</h5>
+			<ul class="category-list">
+				{% for genre in genres %}
+				<li><a href="/blog/{{ genre }}">{{ genre }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="categories">
+			<h5>Tags</h5>
+			<ul class="category-list">
+				{% for tag in tags %}
+				<li><a href="/blog/{{ tag }}">{{ tag }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="categories">
+			<h5>Artists</h5>
+			<ul class="category-list">
+				{% for artist in artists %}
+				<li><a href="/blog/{{ artist }}">{{ artist }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<section>
+		<div class="background">
+			<div class="title">
+				NYC Radio LIVE! Blog
+			</div>
+			<div class="background">
+					{% for result in results %}
+				<div class="post">
+					<div class="top">
+						
+						<li>{{ result['title'] }}</li>
+						<li class="left">By: {{ result['author'] }}</li>
+						<li class="left">Artist: {{ result['artist'] }}</li>
+						<li class="left">Genre: {{ result['genre'] }}</li>
+					</div>
+					<div class="bottom">
+						<li class="left">{{ result['text'] }}</li>
+						<li>Tags: {{ result['tags'] }}</li>
+					</div>
+				</div>
+					{% endfor %}
+			</div>
+		</div>
+	</section>
+
+
+</body>
+{% endblock %}

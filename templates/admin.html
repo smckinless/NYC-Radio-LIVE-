@@ -1,0 +1,22 @@
+<div>{% block title %}Manage Blog Posts{% endblock %}</div>
+
+<link rel="stylesheet" href="static/css/admin.css" type="text/css">
+
+{% block content %}
+
+	<body>
+	    <form action="/new_post" method="POST">
+			<div>
+			<input type="text" name="title" placeholder="Title" class="title"/>
+			<input type="text" name="author" placeholder="Author" class="title"/>
+			<input type="text" name="artist" placeholder="Artist" class="title"/>
+			<input type="text" name="text" placeholder="Text" class="text"/>
+			<input type="text" name="genre" placeholder="Genre" class="title"/>
+			<input type="text" name="tags" placeholder="Tags" class="text"/>
+			<input type="file" name="image" accept="image/*">
+		</div>
+			<button type="submit" name="post" class="post">Post</button>
+	    </form>
+	</body>
+
+{% endblock %}
